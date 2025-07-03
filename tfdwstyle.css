@@ -1,0 +1,186 @@
+
+* {
+ box-sizing: border-box; /*Comando que estipula uma caixa padrao para todos os elementos*/
+}
+header { /* Estiloo do cabecalho*/
+background-color: white;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+top: 0;
+width: 100%;
+padding: 1% 3%;
+flex-wrap: wrap;
+}
+body {/* Estilo de todo o corpo da pagina*/
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f0f2f5;
+color: #333;
+}
+nav ul {/* Estilo do cabecalho na parte da navegacao*/
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+gap: 20px;
+flex-wrap: wrap; 
+}
+nav a {/* modifica a aparencai dos links*/
+text-decoration: none;
+color: #555;
+font-weight: bold;
+padding: 10px 0;
+display: block;
+}
+nav a:hover { /* coloca uma cor diferente quando quando o mouse esta sobre o link*/
+color: #ff9900;
+}
+main {/* controle do espacamento entre os codigos da area principal da pagina */
+padding: 140px 20px 40px 20px;
+max-width: 900px;
+margin: 0 auto;
+}
+section {/* estelisa os section*/
+padding: 25px;
+margin: 0  3%;
+background-color: white;
+margin-bottom: 20px;
+border-radius: 80px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+h2 {/* da uma aparencia padrao para as tags h2*/
+font-size: 2em;
+color: #333;
+border-bottom: 2px solid #f0f2f5;
+padding-bottom: 10px;
+}
+
+h3 {/* da uma aparencia padrao para as tags h3*/
+font-size: 1.5em;
+color: #555;
+}
+h4 a{/* da uma aparencia padrao para as tags h4*/
+    text-align: center;
+    text-decoration: none;
+    color: #4f87cb;
+    display: block;
+}
+h4 a:hover{/* muda a cor do link com a tag h4 para verde*/
+    color: #218838;
+}
+p {/* dita o tamanho da fonte e a altura da das linhas do paragrafo*/
+line-height: 1.6;
+font-size: 1em;
+}
+
+ul {/* altura das linhas nas listas nao ordenadas*/
+line-height: 1.6;
+}
+
+#portfolio img { /*define a posicao e o tamanho das imagnes contidas no id portfolio*/
+max-width: 100%;
+min-height: 150px;
+height: auto;
+display: block;
+margin: 15px auto;
+border-radius: 4px;
+}
+
+.galeria-rascunhos {/*atribui possicao padrao para as propriedades da class galeria-rascunho*/
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 25px; 
+  margin-top: 20px;
+}
+
+.figura-rascunho {/*atribui possicao padrao para as propriedades da class figura-rascunho*/
+  width: 150px; 
+  margin: 0; 
+  text-align: center; 
+}
+
+.figura-rascunho img {/*atribui possicao e estilo para as imagens na class figura-rascunho*/
+  width: 100%; 
+  height: auto; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.figura-rascunho figcaption {/*modifica as legendas abaixo das imagens*/
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 8px; 
+}
+/*estilo formulario do link contato*/
+#contato input[type="text"],
+#contato input[type="email"],
+#contato textarea {
+width: 100%;
+padding: 12px;
+margin-top: 6px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+#contato input:focus,
+#contato textarea:focus { /*modifica a borda da caixa de resposta quando quando estiver em foco*/
+border-color: #007bff;
+outline: none;
+}
+
+#contato form div {
+    margin-bottom: 20px;
+}
+
+#contato label {
+    font-weight: bold;
+}
+
+#contato button[type="submit"] { /*estilo do botao de enviar*/
+background-color: #1663bc;
+color: white;
+font-size: 1em;
+font-weight: bold;
+padding: 15px 30px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+border-radius: 20px;
+}
+
+#contato button[type="submit"]:hover {/*estilo do botao de enviar quando estiver com mouse em cima*/
+background-color: #218838;
+
+}
+
+@media (max-width: 600px) { /*estiliza a formatacao para telas menores*/
+header {
+flex-direction: column;
+align-items: flex-start;
+}
+
+nav ul {
+flex-direction: column;
+gap: 5px;
+width: 100%;
+padding-top: 5px;
+}
+
+section {
+margin: 0 5%;
+padding: 15px;
+}
+
+main {
+ padding: 180px 10px 20px 10px;
+}}
+.hidden {
+    display: none;
+}
